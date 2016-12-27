@@ -1,0 +1,86 @@
+html,body {
+height:100px;
+}
+#ccmilk{
+    margin: 50px auto;
+}
+#ccmilk figure {
+    float:left;
+    margin:0 1.5%;
+
+}
+#mapaneer{
+    margin: 420px auto;
+}
+#mapaneer figure{
+    float: left;
+    margin: 0 1.5%;
+}
+#sambarR figure{
+    float:left;
+    margin:0 1.5%;
+}
+#sabudanaI{
+    margin: 400px auto;
+}
+#sabudanaI figure{
+    float:left;
+    margin: 0 1.5%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    background-color: #62a5a1;
+    position:fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+
+}
+ nav li {
+    float: left;
+}
+
+nav li a{
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav li:hover:not(.active) {
+    background-color: #111;
+}
+ .active {
+    background-color: aqua;
+}
+
+footer {
+
+    margin-top:150px;
+    padding: 10px 0px;
+    background-color: #62a5a1;
+    position:relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+footer ul {
+    list-style-type: none;
+
+}
+footer li {
+    display: inline-block;
+}
+footer li a{
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 4px 6px;
+    text-decoration: none;
+}
+footer p {
+    display: inline;
+    color:white;
+}

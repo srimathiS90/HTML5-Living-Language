@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <meta name="description" content="contact page of sriHari's kitchen">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<header>
+    <div class="jumbotron">
+        <h1>SRIHARI'S KITCHEN</h1>
+    </div>
+
+</header>
+<main>
+    <section>
+
+        <h2>CONTACT US</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="subjects">Reason for Contacting Us</label>
+                <select name="subjects" class="form-control" >
+                    <option value="i have a question">I have a question</option>
+                    <option value="i have something nice to say">I have something nice to say</option>
+                    <option value="i am not very satisfied">I am not very satisfied</option>
+                    <option value="i think i have a brilliant idea">I think i have a brilliant idea</option>
+                    <option value="its about something else">It's about something else</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea rows="4" cols="20" id="message" name="message"  class="form-control" placeholder="Please let us know why you are getting in touch"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname" class="form-control"  autofocus required aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label for="emailaddress">Email Address</label>
+                <input type="email" name="emailaddress" placeholder="Email Address"  class="form-control"  size="60" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" title="Please enter the valid email address with @" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="444-333-5555" class="form-control" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Please enter 10 digit mobile number" required >
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" class="form-control"></div>
+            <div class="form-group">
+                <label for="datetime">Pick a date and time to meet us:</label>
+                <input type="datetime-local" id="datetime" name="datetime" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" size="5" maxlength="5" class="form-control" ></div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select name="country" class="form-control" >
+                    <option value="australia">Australia</option>
+                    <option value="china">China</option>
+                    <option value="canada">Canada</option>
+                    <option value="india">India</option>
+                    <option value="united states">United states</option>
+                </select></div>
+            <div class="form-group">
+                <label for="zipcode">Zip Code:</label>
+                <input type="text" id="zipcode" name="zipcode" size="5" maxlength="5" class="form-control" pattern="(\d{5}([\-]\d{4})?)" title="Please enter 5 digit zipcode"></div>
+            <div class="form-group">
+                <label for="upload">Attach a Photo(.jpg,.png)</label>
+                <input type="file" id="upload" name="upload" accept="image/*" multiple>
+            </div>
+            <input type="submit" value="Send Comments" class="btn btn-default">
+            <input type="reset" value="Reset Form" class="btn btn-default">
+        </form>
+        </div>
+    </section>
+</main>
+</body>
+</html>

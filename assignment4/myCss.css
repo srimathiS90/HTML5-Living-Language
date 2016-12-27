@@ -1,0 +1,29 @@
+body {
+	font-family: Verdana, arial, sans-serif;
+	margin :10px;
+	 position: relative; 
+}
+#location {
+	padding:5px;
+	
+}
+#map {
+	margin:5px;
+	width:760px;
+	height:400px;
+	border:1px solid black;
+	color:blue;
+}
+#map1 {
+	margin:5px;
+	width:760px;
+	height:400px;
+	border:1px solid black;
+	color:blue;
+}
+
+  #section1 {padding-top:50px;height:250px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:250px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:600px;color: #fff; background-color: #ff9800;}
+  #section4 {padding-top:50px;height:600px;color: #fff; background-color: #00bcd4;}
+  

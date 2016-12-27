@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML5 Geolocation API</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src ="html5geolocation.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+
+    <![endif]-->
+  <link rel="stylesheet" href="myCss.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">HTML5 Geolocation APP</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Displaying coordinates with lat/long</a></li>
+          <li><a href="#section2">Showing distance</a></li>
+          <li><a href="#section3">Displaying Map</a></li>
+          <li><a href="#section4">WatchLocation</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+<section id="section1" class="container-fluid">
+<h2>Displaying lattitutes and longitudes </h2>
+<div id="location" >
+  <p>Your location will display here</p>
+</div>
+</section>
+<section id="section2" class="container-fluid">
+<h2>Displaying distance with lattitudes and longitudes</h2>
+<div id="distance" >
+  <p>Displaying distance here</p>
+</div>
+</section>
+<section id="section3" class="container-fluid">
+<h2>Displaying Map with lattitudes and longitudes</h2>
+<div id="map" >
+  <p>Displaying map</p>
+</div>
+</section>
+<section id="section4" class="container-fluid">
+<h2>Watch Location and ClearWatch handler</h2>
+<form>
+		<button type="button" class="btn btn-success" id="watch">Watch Me!</button>
+		<button type="button" class="btn btn-success" id="clearWatch">Clear Watch</button>
+		
+</form>
+<div id="map1" >
+  <p>Displaying map with handlers</p>
+</div>
+</section>
+
+  
+
+
+  
+
+
+</body>
+</html>

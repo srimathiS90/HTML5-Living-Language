@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Banner Using Canvas</title>
+    <meta name="description" content="SriHari'sKitchen Banner created using canvas">
+    <style>
+        #myCanvas {
+            border:1px solid #000;
+            background-color: #f9f7e5;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <canvas id="myCanvas" width="1000" height="300"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        var xa = canvas.width/2;
+        var change = 4;
+        ctx.rect(0,0,canvas.width,canvas.height);
+
+        function animate() {
+            ctx.clearRect(0, 0,canvas.width, 170);
+            ctx.save();
+            ctx.font = "70pt Impact";
+            ctx.textAlign = "center";
+            /* ctx.shadowColor = "rgb(190, 190, 190)";
+             ctx.shadowOffsetX = 10;
+             ctx.shadowOffsetY = 10;
+             ctx.shadowBlur = 10;*/
+            //add linear gradient
+            var grd = ctx.createLinearGradient(300, 120, 300, 100);
+            grd.addColorStop(0, '#18cece');
+            grd.addColorStop(1, '#bc2b9a');
+            ctx.fillStyle = grd;
+            ctx.fillText("SriHari's Kitchen", xa, canvas.height / 2);
+            ctx.restore();
+            if(xa >= 400 || xa <= 100) {
+                change = -change;
+
+            }
+            xa = xa + change;
+            ctx.beginPath();
+            ctx.arc(10, 10, 140, 0, 2 * Math.PI);
+            ctx.fillStyle = "#cc04b4";
+            ctx.strokeStyle = "#cc04b4";
+            ctx.fill();
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(0, 220, 100, 0,2* Math.PI);
+            ctx.fillStyle = "#25cfed";
+            ctx.strokeStyle = "#25cfed";
+            ctx.fill();
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(150, 0, 30, 0, Math.PI);
+            ctx.fillStyle = "#f7ef09";
+            ctx.strokeStyle = "#f7ef09";
+            ctx.fill();
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(100, 270, 50, 0, 2* Math.PI);
+            ctx.fillStyle = "#f70945";
+            ctx.strokeStyle = "#f70945";
+            ctx.fill();
+            ctx.stroke();
+            //add a triangle
+
+            var x1 =850;
+            var y1 =100;
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x1+100, y1);
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 0;
+            ctx.lineTo(x1+50, y1+80);
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 0;
+            ctx.fillStyle ="#f45a07";
+            ctx.strokeStyle="#f45a07";
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(x1, y1+50);
+            ctx.lineTo(x1+100, y1+50);
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 0;
+            ctx.lineTo(x1+50, y1-30);
+            ctx.shadowOffsetX = 0;
+            ctx.shadowOffsetY = 0;
+            ctx.fillStyle = "#f45a07";
+            ctx.strokeStyle="#f45a07";
+            ctx.fill();
+            ctx.closePath();
+            ctx.stroke();
+            var pict = new Image();
+            pict.src = "./canvaslogo.jpg";
+            pict.onload = function() {
+                ctx.drawImage(pict,220,170,pict.width*1.1,pict.height*0.75);
+
+            }
+        }
+        setInterval(animate,100);
+
+    </script>
+</section>
+</body>
+</html>
